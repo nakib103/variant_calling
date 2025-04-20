@@ -1,0 +1,1116 @@
+flowchart TD
+    p0((Channel.fromPath))
+    p1([collect])
+    p2((Channel.fromPath))
+    p3([collect])
+    p4((Channel.fromPath))
+    p5([collect])
+    p6((Channel.fromPath))
+    p7([collect])
+    p8((Channel.fromPath))
+    p9([collect])
+    p10(( ))
+    p11((Channel.fromPath))
+    p12([collect])
+    p13(( ))
+    p14((Channel.fromPath))
+    p15([collect])
+    p16((Channel.fromPath))
+    p17([first])
+    p18((Channel.fromPath))
+    p19([collect])
+    p20(( ))
+    p21((Channel.fromPath))
+    p22([collect])
+    p23((Channel.fromPath))
+    p24([collect])
+    p25((Channel.fromPath))
+    p26([collect])
+    p27((Channel.fromPath))
+    p28([collect])
+    p29(( ))
+    p30((Channel.fromPath))
+    p31([collect])
+    p32((Channel.fromPath))
+    p33([collect])
+    p34(( ))
+    p35((Channel.empty))
+    p36(( ))
+    p37((Channel.empty))
+    p38(( ))
+    p39((Channel.empty))
+    p40(( ))
+    p41((channel.fromSamplesheet))
+    p42([map])
+    p43([tap])
+    p44([groupTuple])
+    p45([map])
+    p46([combine])
+    p47([map])
+    p48((Channel.fromPath))
+    p49((Channel.empty))
+    p50((Channel.empty))
+    p51((Channel.empty))
+    p52((Channel.empty))
+    p53([map])
+    p54((Channel.empty))
+    p55[NFCORE_SAREK:SAREK:PREPARE_GENOME:BWAMEM1_INDEX]
+    p56[NFCORE_SAREK:SAREK:PREPARE_GENOME:BWAMEM2_INDEX]
+    p57[NFCORE_SAREK:SAREK:PREPARE_GENOME:DRAGMAP_HASHTABLE]
+    p58[NFCORE_SAREK:SAREK:PREPARE_GENOME:GATK4_CREATESEQUENCEDICTIONARY]
+    p59(( ))
+    p60[NFCORE_SAREK:SAREK:PREPARE_GENOME:MSISENSORPRO_SCAN]
+    p61(( ))
+    p62[NFCORE_SAREK:SAREK:PREPARE_GENOME:SAMTOOLS_FAIDX]
+    p63(( ))
+    p64(( ))
+    p65([flatten])
+    p66([map])
+    p67[NFCORE_SAREK:SAREK:PREPARE_GENOME:TABIX_DBSNP]
+    p68(( ))
+    p69([flatten])
+    p70([map])
+    p71[NFCORE_SAREK:SAREK:PREPARE_GENOME:TABIX_GERMLINE_RESOURCE]
+    p72(( ))
+    p73([flatten])
+    p74([map])
+    p75[NFCORE_SAREK:SAREK:PREPARE_GENOME:TABIX_KNOWN_SNPS]
+    p76(( ))
+    p77([flatten])
+    p78([map])
+    p79[NFCORE_SAREK:SAREK:PREPARE_GENOME:TABIX_KNOWN_INDELS]
+    p80(( ))
+    p81([flatten])
+    p82([map])
+    p83[NFCORE_SAREK:SAREK:PREPARE_GENOME:TABIX_PON]
+    p84(( ))
+    p85([map])
+    p86[NFCORE_SAREK:SAREK:PREPARE_GENOME:UNZIP_ALLELES]
+    p87([map])
+    p88(( ))
+    p89([mix])
+    p90([map])
+    p91[NFCORE_SAREK:SAREK:PREPARE_GENOME:UNZIP_LOCI]
+    p92([map])
+    p93(( ))
+    p94([mix])
+    p95([map])
+    p96[NFCORE_SAREK:SAREK:PREPARE_GENOME:UNZIP_GC]
+    p97([map])
+    p98(( ))
+    p99([mix])
+    p100([map])
+    p101[NFCORE_SAREK:SAREK:PREPARE_GENOME:UNZIP_RT]
+    p102([map])
+    p103(( ))
+    p104([mix])
+    p105([mix])
+    p106([mix])
+    p107([mix])
+    p108([mix])
+    p109([mix])
+    p110([mix])
+    p111([mix])
+    p112([mix])
+    p113([mix])
+    p114([mix])
+    p115([mix])
+    p116([map])
+    p117([collect])
+    p118(( ))
+    p119([map])
+    p120([collect])
+    p121(( ))
+    p122([map])
+    p123([collect])
+    p124(( ))
+    p125([map])
+    p126([collect])
+    p127(( ))
+    p128([map])
+    p129(( ))
+    p130([map])
+    p131([collect])
+    p132(( ))
+    p133([map])
+    p134([collect])
+    p135(( ))
+    p136([map])
+    p137([collect])
+    p138(( ))
+    p139([map])
+    p140(( ))
+    p141([map])
+    p142([collect])
+    p143(( ))
+    p144((Channel.fromPath))
+    p145([map])
+    p146([collect])
+    p147((Channel.fromPath))
+    p148([collect])
+    p149((Channel.fromPath))
+    p150([collect])
+    p151((Channel.fromPath))
+    p152([collect])
+    p153(( ))
+    p154((Channel.fromPath))
+    p155([collect])
+    p156(( ))
+    p157((Channel.fromPath))
+    p158([collect])
+    p159((Channel.fromPath))
+    p160([collect])
+    p161(( ))
+    p162((Channel.fromPath))
+    p163([collect])
+    p164((Channel.fromPath))
+    p165([collect])
+    p166((Channel.fromPath))
+    p167([collect])
+    p168(( ))
+    p169([concat])
+    p170([collect])
+    p171([concat])
+    p172([collect])
+    p173([concat])
+    p174([collect])
+    p175(( ))
+    p176([concat])
+    p177([collect])
+    p178(( ))
+    p179((Channel.empty))
+    p180((Channel.empty))
+    p181(( ))
+    p182((Channel.empty))
+    p183(( ))
+    p184((Channel.empty))
+    p185(( ))
+    p186((Channel.fromPath))
+    p187([map])
+    p188(( ))
+    p189[NFCORE_SAREK:SAREK:PREPARE_INTERVALS:CREATE_INTERVALS_BED]
+    p190([mix])
+    p191([flatten])
+    p192([map])
+    p193([toSortedList])
+    p194([flatten])
+    p195([collate])
+    p196([map])
+    p197([collect])
+    p198([map])
+    p199([transpose])
+    p200([map])
+    p201[NFCORE_SAREK:SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_SPLIT]
+    p202(( ))
+    p203([map])
+    p204([toList])
+    p205([map])
+    p206([transpose])
+    p207([mix])
+    p208[NFCORE_SAREK:SAREK:PREPARE_INTERVALS:TABIX_BGZIPTABIX_INTERVAL_COMBINED]
+    p209(( ))
+    p210([mix])
+    p211([map])
+    p212([collect])
+    p213(( ))
+    p214([map])
+    p215([collect])
+    p216(( ))
+    p217([map])
+    p218([map])
+    p219(( ))
+    p220([mix])
+    p221([mix])
+    p222([branch])
+    p223((Channel.empty))
+    p224(( ))
+    p225(( ))
+    p226[NFCORE_SAREK:SAREK:CONVERT_FASTQ_INPUT:SAMTOOLS_VIEW_MAP_MAP]
+    p227(( ))
+    p228(( ))
+    p229(( ))
+    p230(( ))
+    p231(( ))
+    p232(( ))
+    p233(( ))
+    p234[NFCORE_SAREK:SAREK:CONVERT_FASTQ_INPUT:SAMTOOLS_VIEW_UNMAP_UNMAP]
+    p235(( ))
+    p236(( ))
+    p237(( ))
+    p238(( ))
+    p239(( ))
+    p240(( ))
+    p241(( ))
+    p242[NFCORE_SAREK:SAREK:CONVERT_FASTQ_INPUT:SAMTOOLS_VIEW_UNMAP_MAP]
+    p243(( ))
+    p244(( ))
+    p245(( ))
+    p246(( ))
+    p247(( ))
+    p248(( ))
+    p249(( ))
+    p250[NFCORE_SAREK:SAREK:CONVERT_FASTQ_INPUT:SAMTOOLS_VIEW_MAP_UNMAP]
+    p251(( ))
+    p252(( ))
+    p253(( ))
+    p254(( ))
+    p255(( ))
+    p256([join])
+    p257([join])
+    p258([map])
+    p259(( ))
+    p260(( ))
+    p261[NFCORE_SAREK:SAREK:CONVERT_FASTQ_INPUT:SAMTOOLS_MERGE_UNMAP]
+    p262(( ))
+    p263(( ))
+    p264(( ))
+    p265(( ))
+    p266(( ))
+    p267[NFCORE_SAREK:SAREK:CONVERT_FASTQ_INPUT:COLLATE_FASTQ_UNMAP]
+    p268(( ))
+    p269(( ))
+    p270(( ))
+    p271(( ))
+    p272(( ))
+    p273[NFCORE_SAREK:SAREK:CONVERT_FASTQ_INPUT:COLLATE_FASTQ_MAP]
+    p274(( ))
+    p275(( ))
+    p276(( ))
+    p277([join])
+    p278([map])
+    p279[NFCORE_SAREK:SAREK:CONVERT_FASTQ_INPUT:CAT_FASTQ]
+    p280([mix])
+    p281([mix])
+    p282([mix])
+    p283([mix])
+    p284([mix])
+    p285([mix])
+    p286([mix])
+    p287([mix])
+    p288([mix])
+    p289[NFCORE_SAREK:SAREK:FASTQC]
+    p290(( ))
+    p291([collect])
+    p292([mix])
+    p293([first])
+    p294([mix])
+    p295(( ))
+    p296(( ))
+    p297(( ))
+    p298[NFCORE_SAREK:SAREK:FASTP]
+    p299(( ))
+    p300(( ))
+    p301(( ))
+    p302([collect])
+    p303([mix])
+    p304([collect])
+    p305([mix])
+    p306([map])
+    p307([transpose])
+    p308([mix])
+    p309([map])
+    p310((Channel.empty))
+    p311((Channel.empty))
+    p312([map])
+    p313(( ))
+    p314[NFCORE_SAREK:SAREK:FASTQ_ALIGN_BWAMEM_MEM2_DRAGMAP_SENTIEON:BWAMEM1_MEM]
+    p315([map])
+    p316(( ))
+    p317[NFCORE_SAREK:SAREK:FASTQ_ALIGN_BWAMEM_MEM2_DRAGMAP_SENTIEON:BWAMEM2_MEM]
+    p318([map])
+    p319(( ))
+    p320[NFCORE_SAREK:SAREK:FASTQ_ALIGN_BWAMEM_MEM2_DRAGMAP_SENTIEON:DRAGMAP_ALIGN]
+    p321([map])
+    p322([map])
+    p323([map])
+    p324[NFCORE_SAREK:SAREK:FASTQ_ALIGN_BWAMEM_MEM2_DRAGMAP_SENTIEON:SENTIEON_BWAMEM]
+    p325((Channel.empty))
+    p326([mix])
+    p327([mix])
+    p328([mix])
+    p329([map])
+    p330([mix])
+    p331([map])
+    p332([mix])
+    p333(( ))
+    p334([mix])
+    p335([mix])
+    p336([mix])
+    p337([mix])
+    p338([map])
+    p339([groupTuple])
+    p340([map])
+    p341([groupTuple])
+    p342(( ))
+    p343([mix])
+    p344([mix])
+    p345((Channel.empty))
+    p346(( ))
+    p347((Channel.empty))
+    p348((Channel.empty))
+    p349((Channel.empty))
+    p350((Channel.empty))
+    p351((Channel.empty))
+    p352[NFCORE_SAREK:SAREK:BAM_MARKDUPLICATES:GATK4_MARKDUPLICATES]
+    p353(( ))
+    p354(( ))
+    p355([join])
+    p356((Channel.empty))
+    p357((Channel.empty))
+    p358([map])
+    p359[NFCORE_SAREK:SAREK:BAM_MARKDUPLICATES:CRAM_QC_MOSDEPTH_SAMTOOLS:SAMTOOLS_STATS]
+    p360(( ))
+    p361([map])
+    p362([combine])
+    p363([map])
+    p364[NFCORE_SAREK:SAREK:BAM_MARKDUPLICATES:CRAM_QC_MOSDEPTH_SAMTOOLS:MOSDEPTH]
+    p365(( ))
+    p366(( ))
+    p367(( ))
+    p368(( ))
+    p369(( ))
+    p370(( ))
+    p371(( ))
+    p372(( ))
+    p373(( ))
+    p374(( ))
+    p375([mix])
+    p376([mix])
+    p377([mix])
+    p378([mix])
+    p379([first])
+    p380([mix])
+    p381([mix])
+    p382([mix])
+    p383([mix])
+    p384([mix])
+    p385([collect])
+    p386([mix])
+    p387([mix])
+    p388((Channel.empty))
+    p389([mix])
+    p390([map])
+    p391[NFCORE_SAREK:SAREK:CRAM_TO_BAM]
+    p392(( ))
+    p393([mix])
+    p394([collectFile])
+    p395(( ))
+    p396((Channel.empty))
+    p397([mix])
+    p398([map])
+    p399((Channel.empty))
+    p400(( ))
+    p401((Channel.empty))
+    p402((Channel.empty))
+    p403([combine])
+    p404([map])
+    p405([map])
+    p406[NFCORE_SAREK:SAREK:BAM_BASERECALIBRATOR:GATK4_BASERECALIBRATOR]
+    p407([map])
+    p408([groupTuple])
+    p409([branch])
+    p410[NFCORE_SAREK:SAREK:BAM_BASERECALIBRATOR:GATK4_GATHERBQSRREPORTS]
+    p411([map])
+    p412([mix])
+    p413([map])
+    p414([mix])
+    p415([mix])
+    p416([mix])
+    p417((Channel.empty))
+    p418([mix])
+    p419([collect])
+    p420([mix])
+    p421([join])
+    p422([join])
+    p423([collectFile])
+    p424(( ))
+    p425((Channel.empty))
+    p426(( ))
+    p427((Channel.empty))
+    p428((Channel.empty))
+    p429([combine])
+    p430([map])
+    p431([map])
+    p432[NFCORE_SAREK:SAREK:BAM_APPLYBQSR:GATK4_APPLYBQSR]
+    p433(( ))
+    p434([map])
+    p435([groupTuple])
+    p436((Channel.empty))
+    p437([branch])
+    p438([map])
+    p439([map])
+    p440[NFCORE_SAREK:SAREK:BAM_APPLYBQSR:CRAM_MERGE_INDEX_SAMTOOLS:MERGE_CRAM]
+    p441(( ))
+    p442(( ))
+    p443(( ))
+    p444([mix])
+    p445[NFCORE_SAREK:SAREK:BAM_APPLYBQSR:CRAM_MERGE_INDEX_SAMTOOLS:INDEX_CRAM]
+    p446(( ))
+    p447(( ))
+    p448([join])
+    p449([first])
+    p450([mix])
+    p451([first])
+    p452([mix])
+    p453([map])
+    p454([mix])
+    p455([mix])
+    p456([mix])
+    p457((Channel.empty))
+    p458([mix])
+    p459((Channel.empty))
+    p460((Channel.empty))
+    p461([map])
+    p462[NFCORE_SAREK:SAREK:CRAM_QC_RECAL:SAMTOOLS_STATS]
+    p463([map])
+    p464([combine])
+    p465([map])
+    p466[NFCORE_SAREK:SAREK:CRAM_QC_RECAL:MOSDEPTH]
+    p467(( ))
+    p468(( ))
+    p469(( ))
+    p470(( ))
+    p471(( ))
+    p472(( ))
+    p473(( ))
+    p474(( ))
+    p475(( ))
+    p476(( ))
+    p477([mix])
+    p478([mix])
+    p479([mix])
+    p480([mix])
+    p481([first])
+    p482([mix])
+    p483([collect])
+    p484([mix])
+    p485([mix])
+    p486[NFCORE_SAREK:SAREK:CRAM_TO_BAM_RECAL]
+    p487(( ))
+    p488([mix])
+    p489((Channel.empty))
+    p490(( ))
+    p491([collectFile])
+    p492(( ))
+    p493((Channel.empty))
+    p494(( ))
+    p495([unique])
+    p496([collectFile])
+    p497[NFCORE_SAREK:SAREK:CUSTOM_DUMPSOFTWAREVERSIONS]
+    p498(( ))
+    p499(( ))
+    p500([collect])
+    p501((Channel.empty))
+    p502([mix])
+    p503(( ))
+    p504([collectFile])
+    p505([mix])
+    p506(( ))
+    p507([collectFile])
+    p508([mix])
+    p509([collect])
+    p510([ifEmpty])
+    p511([mix])
+    p512([collect])
+    p513([collect])
+    p514([ifEmpty])
+    p515([collect])
+    p516([ifEmpty])
+    p517([collect])
+    p518([ifEmpty])
+    p519[NFCORE_SAREK:SAREK:MULTIQC]
+    p520(( ))
+    p521(( ))
+    p522([toList])
+    p523(( ))
+    p524([mix])
+    p525(( ))
+    p0 --> p1
+    p1 -->|allele_files| p85
+    p2 --> p3
+    p3 -->|loci_files| p90
+    p4 --> p5
+    p5 -->|gc_file| p95
+    p6 --> p7
+    p7 -->|rt_file| p100
+    p8 --> p9
+    p9 -->|cf_chrom_len| p10
+    p11 --> p12
+    p12 -->|chr_files| p13
+    p14 --> p15
+    p15 -->|dbsnp| p65
+    p16 --> p17
+    p17 -->|fasta| p53
+    p18 --> p19
+    p19 -->|fasta_fai| p20
+    p21 --> p22
+    p22 -->|germline_resource| p69
+    p23 --> p24
+    p24 -->|known_indels| p77
+    p25 --> p26
+    p26 -->|known_snps| p73
+    p27 --> p28
+    p28 -->|mappability| p29
+    p30 --> p31
+    p31 -->|pon| p81
+    p32 --> p33
+    p33 -->|sentieon_dnascope_model| p34
+    p35 -->|bcftools_annotations| p36
+    p37 -->|bcftools_annotations_index| p38
+    p39 -->|bcftools_header_lines| p40
+    p41 -->|ch_from_samplesheet| p42
+    p42 --> p43
+    p43 -->|ch_with_patient_sample| p46
+    p43 --> p44
+    p44 --> p45
+    p45 --> p46
+    p46 --> p47
+    p47 -->|input_sample| p222
+    p48 -->|ch_multiqc_config| p513
+    p49 -->|ch_multiqc_custom_config| p515
+    p50 -->|ch_multiqc_logo| p517
+    p51 -->|reports| p292
+    p52 -->|versions| p220
+    p53 -->|fasta| p55
+    p54 -->|versions| p89
+    p55 --> p116
+    p55 --> p106
+    p53 -->|fasta| p56
+    p56 --> p119
+    p56 --> p107
+    p53 -->|fasta| p57
+    p57 --> p122
+    p57 --> p108
+    p53 -->|fasta| p58
+    p58 -->|dict| p59
+    p58 --> p109
+    p53 -->|fasta| p60
+    p60 --> p139
+    p60 --> p110
+    p53 -->|fasta| p62
+    p61 --> p62
+    p62 --> p64
+    p62 --> p128
+    p62 --> p63
+    p62 --> p105
+    p65 --> p66
+    p66 --> p67
+    p67 --> p125
+    p67 --> p68
+    p67 --> p111
+    p69 --> p70
+    p70 --> p71
+    p71 --> p130
+    p71 --> p72
+    p71 --> p112
+    p73 --> p74
+    p74 --> p75
+    p75 --> p133
+    p75 --> p76
+    p75 --> p113
+    p77 --> p78
+    p78 --> p79
+    p79 --> p136
+    p79 --> p80
+    p79 --> p114
+    p81 --> p82
+    p82 --> p83
+    p83 --> p141
+    p83 --> p84
+    p83 --> p115
+    p85 --> p86
+    p86 --> p87
+    p86 --> p89
+    p87 -->|allele_files| p88
+    p89 -->|versions| p94
+    p90 --> p91
+    p91 --> p92
+    p91 --> p94
+    p92 -->|loci_files| p93
+    p94 -->|versions| p99
+    p95 --> p96
+    p96 --> p97
+    p96 --> p99
+    p97 -->|gc_file| p98
+    p99 -->|versions| p104
+    p100 --> p101
+    p101 --> p102
+    p101 --> p104
+    p102 -->|rt_file| p103
+    p104 -->|versions| p105
+    p105 -->|versions| p106
+    p106 -->|versions| p107
+    p107 -->|versions| p108
+    p108 -->|versions| p109
+    p109 -->|versions| p110
+    p110 -->|versions| p111
+    p111 -->|versions| p112
+    p112 -->|versions| p113
+    p113 -->|versions| p114
+    p114 -->|versions| p115
+    p115 -->|versions| p220
+    p116 --> p117
+    p117 -->|bwa| p118
+    p119 --> p120
+    p120 -->|bwamem2| p121
+    p122 --> p123
+    p123 -->|hashtable| p124
+    p125 --> p126
+    p126 -->|dbsnp_tbi| p127
+    p128 -->|fasta_fai| p129
+    p130 --> p131
+    p131 -->|germline_resource_tbi| p132
+    p133 --> p134
+    p134 -->|known_snps_tbi| p135
+    p136 --> p137
+    p137 -->|known_indels_tbi| p138
+    p139 -->|msisensorpro_scan| p140
+    p141 --> p142
+    p142 -->|pon_tbi| p143
+    p144 --> p145
+    p145 --> p146
+    p146 -->|dict| p405
+    p147 --> p148
+    p148 -->|fasta_fai| p323
+    p149 --> p150
+    p150 -->|index| p312
+    p151 --> p152
+    p152 -->|bwamem2| p153
+    p154 --> p155
+    p155 -->|dragmap| p156
+    p157 --> p158
+    p158 -->|dbsnp_tbi| p171
+    p159 --> p160
+    p160 -->|germline_resource_tbi| p161
+    p162 --> p163
+    p163 -->|known_indels_tbi| p171
+    p164 --> p165
+    p165 -->|known_snps_tbi| p176
+    p166 --> p167
+    p167 -->|pon_tbi| p168
+    p24 -->|known_indels| p169
+    p15 -->|dbsnp| p169
+    p169 --> p170
+    p170 -->|known_sites| p406
+    p171 --> p172
+    p172 -->|known_sites_tbi| p406
+    p15 -->|dbsnp| p173
+    p26 -->|known_snps| p173
+    p173 --> p174
+    p174 -->|known_sites_snps| p175
+    p158 -->|dbsnp_tbi| p176
+    p176 --> p177
+    p177 -->|known_sites_snps_tbi| p178
+    p179 -->|versions| p190
+    p180 -->|intervals_bed| p181
+    p182 -->|intervals_bed_gz_tbi| p183
+    p184 -->|intervals_combined| p185
+    p186 --> p187
+    p187 -->|intervals_combined| p208
+    p188 -->|intervals| p189
+    p189 -->|intervals_bed| p191
+    p189 --> p190
+    p190 -->|versions| p207
+    p191 --> p192
+    p192 --> p193
+    p193 --> p194
+    p194 --> p195
+    p195 --> p196
+    p196 --> p197
+    p197 --> p198
+    p198 --> p199
+    p199 -->|intervals| p200
+    p200 --> p201
+    p201 --> p203
+    p201 --> p202
+    p201 --> p207
+    p203 --> p204
+    p204 --> p205
+    p205 --> p206
+    p206 -->|intervals_bed_gz_tbi| p218
+    p207 -->|versions| p210
+    p208 --> p214
+    p208 --> p209
+    p208 --> p210
+    p210 -->|versions| p221
+    p187 -->|intervals_combined| p211
+    p211 --> p212
+    p212 -->|intervals_bed_combined| p213
+    p214 --> p215
+    p215 -->|intervals_bed_gz_tbi_combined| p216
+    p199 -->|intervals| p217
+    p217 -->|intervals| p403
+    p218 -->|intervals_bed_gz_tbi_and_num_intervals| p219
+    p220 -->|versions| p221
+    p221 -->|versions| p294
+    p222 --> p288
+    p222 -->|input| p226
+    p223 -->|versions| p280
+    p224 --> p226
+    p225 -->|qname| p226
+    p226 --> p273
+    p226 --> p231
+    p226 --> p230
+    p226 --> p229
+    p226 --> p228
+    p226 --> p227
+    p226 --> p284
+    p222 -->|input| p234
+    p232 --> p234
+    p233 -->|qname| p234
+    p234 --> p256
+    p234 --> p239
+    p234 --> p238
+    p234 --> p237
+    p234 --> p236
+    p234 --> p235
+    p234 --> p287
+    p222 -->|input| p242
+    p240 --> p242
+    p241 -->|qname| p242
+    p242 --> p256
+    p242 --> p247
+    p242 --> p246
+    p242 --> p245
+    p242 --> p244
+    p242 --> p243
+    p242 --> p286
+    p222 -->|input| p250
+    p248 --> p250
+    p249 -->|qname| p250
+    p250 --> p257
+    p250 --> p255
+    p250 --> p254
+    p250 --> p253
+    p250 --> p252
+    p250 --> p251
+    p250 --> p285
+    p256 --> p257
+    p257 --> p258
+    p258 -->|all_unmapped_bam| p261
+    p259 --> p261
+    p260 --> p261
+    p261 --> p267
+    p261 --> p264
+    p261 --> p263
+    p261 --> p262
+    p261 --> p283
+    p265 --> p267
+    p266 -->|interleave| p267
+    p267 --> p277
+    p267 --> p270
+    p267 --> p269
+    p267 --> p268
+    p267 --> p282
+    p271 --> p273
+    p272 -->|interleave| p273
+    p273 --> p277
+    p273 --> p276
+    p273 --> p275
+    p273 --> p274
+    p273 --> p281
+    p277 --> p278
+    p278 -->|reads_to_concat| p279
+    p279 -->|reads| p288
+    p279 --> p280
+    p280 -->|versions| p281
+    p281 -->|versions| p282
+    p282 -->|versions| p283
+    p283 -->|versions| p284
+    p284 -->|versions| p285
+    p285 -->|versions| p286
+    p286 -->|versions| p287
+    p287 -->|versions| p343
+    p288 -->|reads_for_fastp| p289
+    p289 --> p290
+    p289 --> p291
+    p289 --> p293
+    p291 --> p292
+    p292 -->|reports| p303
+    p293 --> p294
+    p294 -->|versions| p308
+    p288 -->|reads_for_fastp| p298
+    p295 -->|adapter_fasta| p298
+    p296 -->|save_trimmed_fail| p298
+    p297 -->|save_merged| p298
+    p298 --> p306
+    p298 --> p302
+    p298 --> p304
+    p298 --> p301
+    p298 --> p308
+    p298 --> p300
+    p298 --> p299
+    p302 --> p303
+    p303 -->|reports| p305
+    p304 --> p305
+    p305 -->|reports| p386
+    p306 --> p307
+    p307 -->|reads_for_alignment| p309
+    p308 -->|versions| p343
+    p309 -->|reads| p314
+    p310 -->|versions| p334
+    p311 -->|reports| p332
+    p312 --> p314
+    p313 -->|sort_bam| p314
+    p314 --> p326
+    p314 --> p334
+    p150 -->|index| p315
+    p315 --> p317
+    p309 -->|reads| p317
+    p316 -->|sort_bam| p317
+    p317 --> p327
+    p317 --> p335
+    p150 -->|index| p318
+    p318 --> p320
+    p309 -->|reads| p320
+    p319 -->|sort_bam| p320
+    p320 --> p328
+    p320 --> p332
+    p320 --> p336
+    p150 -->|index| p321
+    p321 --> p324
+    p17 -->|fasta| p322
+    p322 --> p324
+    p323 --> p324
+    p309 -->|reads| p324
+    p324 --> p329
+    p324 --> p337
+    p325 -->|bam| p326
+    p326 -->|bam| p327
+    p327 -->|bam| p328
+    p328 -->|bam| p330
+    p329 --> p330
+    p330 -->|bam| p338
+    p324 --> p331
+    p331 -->|bai| p340
+    p332 -->|reports| p333
+    p334 -->|versions| p335
+    p335 -->|versions| p336
+    p336 -->|versions| p337
+    p337 -->|versions| p344
+    p338 --> p339
+    p339 -->|bam| p352
+    p340 --> p341
+    p341 -->|bai_mapped| p342
+    p343 -->|versions| p344
+    p344 -->|versions| p387
+    p345 -->|cram_markduplicates_no_spark| p346
+    p347 -->|cram_sentieon_dedup| p389
+    p348 -->|cram_markduplicates_spark| p389
+    p349 -->|cram_skip_markduplicates| p397
+    p350 -->|versions| p383
+    p351 -->|reports| p381
+    p17 -->|fasta| p352
+    p148 -->|fasta_fai| p352
+    p352 --> p355
+    p352 --> p354
+    p352 --> p355
+    p352 --> p353
+    p352 --> p381
+    p352 --> p383
+    p355 -->|cram_markduplicates_no_spark| p359
+    p356 -->|versions| p378
+    p357 -->|reports| p375
+    p17 -->|fasta| p358
+    p358 --> p359
+    p359 --> p375
+    p359 --> p379
+    p360 -->|intervals| p361
+    p361 --> p362
+    p355 -->|cram_markduplicates_no_spark| p362
+    p362 --> p364
+    p17 -->|fasta| p363
+    p363 --> p364
+    p364 --> p376
+    p364 --> p374
+    p364 --> p377
+    p364 --> p373
+    p364 --> p372
+    p364 --> p371
+    p364 --> p370
+    p364 --> p369
+    p364 --> p368
+    p364 --> p367
+    p364 --> p366
+    p364 --> p365
+    p364 --> p378
+    p375 -->|reports| p376
+    p376 -->|reports| p377
+    p377 -->|reports| p382
+    p378 -->|versions| p380
+    p379 --> p380
+    p380 -->|versions| p384
+    p381 -->|reports| p382
+    p382 -->|reports| p385
+    p383 -->|versions| p384
+    p384 -->|versions| p387
+    p385 --> p386
+    p386 -->|reports| p420
+    p387 -->|versions| p393
+    p388 --> p389
+    p355 -->|cram_markduplicates_no_spark| p389
+    p389 --> p390
+    p390 -->|cram_markduplicates| p391
+    p17 -->|fasta| p391
+    p148 -->|fasta_fai| p391
+    p391 --> p392
+    p391 --> p393
+    p393 -->|versions| p416
+    p390 -->|cram_markduplicates| p394
+    p394 --> p395
+    p396 --> p397
+    p390 -->|cram_markduplicates| p397
+    p397 --> p398
+    p398 -->|cram| p403
+    p399 -->|ch_table_bqsr_no_spark| p400
+    p401 -->|ch_table_bqsr_spark| p418
+    p402 -->|versions| p414
+    p403 --> p404
+    p404 -->|cram_intervals| p406
+    p405 --> p406
+    p17 -->|fasta| p406
+    p148 -->|fasta_fai| p406
+    p406 --> p407
+    p406 --> p414
+    p407 --> p408
+    p408 --> p409
+    p409 --> p410
+    p409 --> p411
+    p410 --> p412
+    p410 --> p415
+    p411 --> p412
+    p412 --> p413
+    p413 -->|ch_table_bqsr_no_spark| p418
+    p414 -->|versions| p415
+    p415 -->|versions| p416
+    p416 -->|versions| p456
+    p417 --> p418
+    p418 -->|ch_table_bqsr| p419
+    p419 --> p420
+    p420 -->|reports| p484
+    p398 -->|cram| p421
+    p418 -->|ch_table_bqsr| p421
+    p421 -->|cram| p429
+    p418 -->|ch_table_bqsr| p422
+    p390 -->|cram_markduplicates| p422
+    p422 -->|cram_table_bqsr| p423
+    p423 --> p424
+    p425 -->|cram_variant_calling_no_spark| p426
+    p427 -->|cram_variant_calling_spark| p458
+    p428 -->|versions| p454
+    p217 -->|intervals| p429
+    p429 --> p430
+    p430 -->|cram_intervals| p432
+    p146 -->|dict| p431
+    p431 --> p432
+    p17 -->|fasta| p432
+    p148 -->|fasta_fai| p432
+    p432 --> p433
+    p432 --> p434
+    p432 --> p454
+    p434 --> p435
+    p435 -->|cram| p437
+    p436 -->|versions| p450
+    p437 --> p440
+    p437 --> p444
+    p17 -->|fasta| p438
+    p438 --> p440
+    p148 -->|fasta_fai| p439
+    p439 --> p440
+    p440 --> p443
+    p440 --> p444
+    p440 --> p442
+    p440 --> p441
+    p440 --> p451
+    p444 -->|cram_all| p445
+    p445 --> p447
+    p445 --> p446
+    p445 --> p448
+    p445 --> p449
+    p444 -->|cram_all| p448
+    p448 -->|cram_crai| p453
+    p449 --> p450
+    p450 -->|versions| p452
+    p451 --> p452
+    p452 -->|versions| p455
+    p453 -->|cram_variant_calling_no_spark| p458
+    p454 -->|versions| p455
+    p455 -->|versions| p456
+    p456 -->|versions| p485
+    p457 --> p458
+    p458 -->|cram_recalibrated_index| p462
+    p459 -->|versions| p480
+    p460 -->|reports| p477
+    p17 -->|fasta| p461
+    p461 --> p462
+    p462 --> p477
+    p462 --> p481
+    p360 -->|intervals| p463
+    p463 --> p464
+    p458 -->|cram_recalibrated_index| p464
+    p464 --> p466
+    p17 -->|fasta| p465
+    p465 --> p466
+    p466 --> p478
+    p466 --> p476
+    p466 --> p479
+    p466 --> p475
+    p466 --> p474
+    p466 --> p473
+    p466 --> p472
+    p466 --> p471
+    p466 --> p470
+    p466 --> p469
+    p466 --> p468
+    p466 --> p467
+    p466 --> p480
+    p477 -->|reports| p478
+    p478 -->|reports| p479
+    p479 -->|reports| p483
+    p480 -->|versions| p482
+    p481 --> p482
+    p482 -->|versions| p485
+    p483 --> p484
+    p484 -->|reports| p509
+    p485 -->|versions| p488
+    p458 -->|cram_recalibrated_index| p486
+    p17 -->|fasta| p486
+    p148 -->|fasta_fai| p486
+    p486 --> p487
+    p486 --> p488
+    p488 -->|versions| p495
+    p489 -->|csv_recalibration| p490
+    p458 -->|cram_recalibrated_index| p491
+    p491 --> p492
+    p493 -->|version_yaml| p494
+    p495 --> p496
+    p496 --> p497
+    p497 --> p499
+    p497 --> p500
+    p497 --> p498
+    p500 -->|version_yaml| p502
+    p501 -->|multiqc_files| p502
+    p502 -->|multiqc_files| p505
+    p503 -->|ch_workflow_summary| p504
+    p504 --> p505
+    p505 -->|multiqc_files| p508
+    p506 -->|ch_methods_description| p507
+    p507 --> p508
+    p508 -->|multiqc_files| p511
+    p509 --> p510
+    p510 --> p511
+    p511 -->|multiqc_files| p512
+    p512 --> p519
+    p513 --> p514
+    p514 --> p519
+    p515 --> p516
+    p516 --> p519
+    p517 --> p518
+    p518 --> p519
+    p519 --> p522
+    p519 --> p521
+    p519 --> p520
+    p519 --> p524
+    p522 -->|multiqc_report| p523
+    p488 -->|versions| p524
+    p524 -->|versions| p525

@@ -1,0 +1,17 @@
+patient,sample,lane,fastq_1,fastq_2
+patient1,SAMN07325927,lane29,../inputs/GCA_002844635/SRR5815266_1.fastq.gz,../inputs/GCA_002844635/SRR5815266_2.fastq.gz
+patient1,SAMN07325927,lane106,../inputs/GCA_002844635/SRR5815342_1.fastq.gz,../inputs/GCA_002844635/SRR5815342_2.fastq.gz
+patient1,SAMN07325927,lane108,../inputs/GCA_002844635/SRR5815343_1.fastq.gz,../inputs/GCA_002844635/SRR5815343_2.fastq.gz
+patient1,SAMN07325927,lane110,../inputs/GCA_002844635/SRR5815344_1.fastq.gz,../inputs/GCA_002844635/SRR5815344_2.fastq.gz
+patient1,SAMN07325927,lane112,../inputs/GCA_002844635/SRR5815345_1.fastq.gz,../inputs/GCA_002844635/SRR5815345_2.fastq.gz
+patient1,SAMN07325927,lane114,../inputs/GCA_002844635/SRR5815346_1.fastq.gz,../inputs/GCA_002844635/SRR5815346_2.fastq.gz
+patient1,SAMN07325927,lane116,../inputs/GCA_002844635/SRR5815347_1.fastq.gz,../inputs/GCA_002844635/SRR5815347_2.fastq.gz
+patient1,SAMN07325927,lane118,../inputs/GCA_002844635/SRR5815348_1.fastq.gz,../inputs/GCA_002844635/SRR5815348_2.fastq.gz
+patient1,SAMN07325927,lane120,../inputs/GCA_002844635/SRR5815349_1.fastq.gz,../inputs/GCA_002844635/SRR5815349_2.fastq.gz
+patient1,SAMN07325927,lane134,../inputs/GCA_002844635/SRR5815362_1.fastq.gz,../inputs/GCA_002844635/SRR5815362_2.fastq.gz
+patient1,SAMN07325927,lane140,../inputs/GCA_002844635/SRR5815367_1.fastq.gz,../inputs/GCA_002844635/SRR5815367_2.fastq.gz
+patient1,SAMN07325927,lane186,../inputs/GCA_002844635/SRR5815412_1.fastq.gz,../inputs/GCA_002844635/SRR5815412_2.fastq.gz
+patient1,SAMN07325927,lane261,../inputs/GCA_002844635/SRR5815486_1.fastq.gz,../inputs/GCA_002844635/SRR5815486_2.fastq.gz
+patient1,SAMN07325927,lane264,../inputs/GCA_002844635/SRR5815488_1.fastq.gz,../inputs/GCA_002844635/SRR5815488_2.fastq.gz
+patient1,SAMN07325927,lane266,../inputs/GCA_002844635/SRR5815489_1.fastq.gz,../inputs/GCA_002844635/SRR5815489_2.fastq.gz
+patient1,SAMN07325927,lane314,../inputs/GCA_002844635/SRR5815536_1.fastq.gz,../inputs/GCA_002844635/SRR5815536_2.fastq.gz

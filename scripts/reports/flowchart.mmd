@@ -1,0 +1,45 @@
+flowchart TD
+    p0((Channel.fromPath))
+    p1[filter_by_licence:fetch_licence]
+    p2([filter])
+    p3([subscribe])
+    p4([filter])
+    p5([map])
+    p6([map])
+    p7([branch])
+    p8([map])
+    p9([map])
+    p10[map_scores_to_HGVSg_variants]
+    p11[download_chain_files]
+    p12[liftover_to_hg38]
+    p13[get_hgvsp]
+    p14([filter])
+    p15[run_variant_recoder]
+    p16[map_scores_to_HGVSp_variants]
+    p17([mix])
+    p18([collect])
+    p19[concatenate_files]
+    p20[tabix]
+    p21(( ))
+    p0 -->|files| p1
+    p1 --> p2
+    p2 --> p3
+    p1 --> p4
+    p4 --> p5
+    p5 -->|filtered| p6
+    p6 --> p7
+    p7 --> p8
+    p7 --> p9
+    p8 --> p13
+    p9 --> p10
+    p10 --> p12
+    p11 --> p12
+    p12 --> p17
+    p13 --> p14
+    p14 -->|hgvsp| p15
+    p15 --> p16
+    p16 --> p17
+    p17 --> p18
+    p18 -->|output_files| p19
+    p19 --> p20
+    p20 --> p21

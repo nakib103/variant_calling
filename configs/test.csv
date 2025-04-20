@@ -1,0 +1,2 @@
+patient,sample,lane,fastq_1,fastq_2
+patient1,SAMN01894345,lane1,/hps/nobackup/flicek/ensembl/variation/snhossain/issues/ensvar-6241/inputs/GCA_000472085/samples/SRR652257_1.fastq.gz,/hps/nobackup/flicek/ensembl/variation/snhossain/issues/ensvar-6241/inputs/GCA_000472085/samples/SRR652257_2.fastq.gz
