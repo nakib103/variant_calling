@@ -33,5 +33,5 @@ fi
 
 if [[ "$assemb" != "" ]]
 then
-	python -u 1b.generate_config.py -a ${assemb} --check_integrity -v --no_workers 50
+	python -u 1c.generate_config.py -a ${assemb} --check_integrity -v --no_workers 50
 fi
