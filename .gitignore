@@ -3,6 +3,7 @@ inputs/
 data/
 sarek/
 scripts/work/
+scripts/tmp/
 scripts/*.out
 scripts/*.err
 scripts/.nextflow*
