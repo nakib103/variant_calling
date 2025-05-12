@@ -25,12 +25,14 @@ then
 	rm -rf GLnexus.DB
 fi
 
+# run GLnexus
 time glnexus_cli \
 	--bed ${region_dir}/${seq}.bed \
 	--config DeepVariantWGS \
 	--list $manifest_file > $out_dir/parts/deepvariant.cohort.${seq}.bcf
 bcftools view $out_dir/parts/deepvariant.cohort.${seq}.bcf | bgzip -c > $out_dir/parts/deepvariant.cohort.${seq}.vcf.gz
 
+# run VEP
 $ENSEMBL_ROOT_DIR/ensembl-vep/vep \
 -i $out_dir/parts/deepvariant.cohort.${seq}.vcf.gz \
 -o $out_dir/parts/deepvariant.cohort.${seq}_VEP.vcf.gz \
@@ -44,5 +46,16 @@ $ENSEMBL_ROOT_DIR/ensembl-vep/vep \
 --variant_class \
 --canonical \
 --compress_output bgzip
+
+# extract novel variant
+input_file=${base_dir}/deepvariant.cohort.${seq}_VEP.vcf.gz
+output_file=${base_dir}/deepvariant.cohort.${seq}_VEP_novel.vcf.gz
+sbatch -J run_extract_novel_${seq} -o outputs/run_extract_novel_${seq}.out -e outputs/run_extract_novel_${seq}.err 5c.run_extract_novel.sh ${input_file} ${output_file}
+
+# get sites count
+source 4c.analyse_genotype.sh $out_dir/parts/deepvariant.cohort.${seq}.vcf.gz
+
+# get frequency counts
+python 4d.count_frequency.py -i $out_dir/parts/deepvariant.cohort.${seq}_VEP.vcf.gz --output_dir $out_dir/parts
 
 sacct -j $SLURM_JOB_ID --format Timelimit,CPUTime,CPUTimeRAW,MaxRSS

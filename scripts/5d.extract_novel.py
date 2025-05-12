@@ -1,11 +1,12 @@
 from cyvcf2 import VCF, Writer
 import os
 import configparser
+import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", dest="input", type=str)
 parser.add_argument("-o", "--output", dest="output", type=str)
-args = parser.parse_args(args)
+args = parser.parse_args()
 
 base_dir = "/hps/nobackup/flicek/ensembl/variation/snhossain/issues/ensvar-6241/outputs/GCA_000003025/analysis"
 input_file = args.input or os.path.join(base_dir, "GCA_000003025_VEP.vcf.gz")

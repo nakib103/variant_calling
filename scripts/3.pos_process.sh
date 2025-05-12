@@ -120,5 +120,5 @@ qr_file=${q_dir}/collapse_callers.txt
 
 echo "Merging all caller files into single one"
 bcftools concat --no-version -a $vc_files | bgzip > $r_file
-#python 4b.collapse_callers.py $r_file $rd_file $qr_file
+#python 3b.collapse_callers.py $r_file $rd_file $qr_file
 #tabix -p vcf -f $rd_file

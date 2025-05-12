@@ -4,6 +4,7 @@ data/
 sarek/
 scripts/work/
 scripts/tmp/
+scripts/outputs/
 scripts/*.out
 scripts/*.err
 scripts/.nextflow*
