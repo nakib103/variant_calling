@@ -9,7 +9,7 @@
 out_dir=$PWD/../outputs/GCA_000003025/genotyping/
 region_dir=$PWD/../configs/regions
 tmp_dir=$PWD/tmp
-manifest_file=$PWD/GLnexus.manifest
+manifest_file=$PWD/../configs/GLnexus.manifest
 
 seq=$1
 
@@ -50,10 +50,11 @@ $ENSEMBL_ROOT_DIR/ensembl-vep/vep \
 # extract novel variant
 input_file=${base_dir}/deepvariant.cohort.${seq}_VEP.vcf.gz
 output_file=${base_dir}/deepvariant.cohort.${seq}_VEP_novel.vcf.gz
+cd ../..
 sbatch -J run_extract_novel_${seq} -o outputs/run_extract_novel_${seq}.out -e outputs/run_extract_novel_${seq}.err 5c.run_extract_novel.sh ${input_file} ${output_file}
 
 # get sites count
-source 4c.analyse_genotype.sh $out_dir/parts/deepvariant.cohort.${seq}.vcf.gz
+source 4c.analyse_genotype.sh $out_dir/parts/deepvariant.cohort.${seq}.vcf.gz ${output_file_base}_count.txt
 
 # get frequency counts
 python 4d.count_frequency.py -i $out_dir/parts/deepvariant.cohort.${seq}_VEP.vcf.gz --output_dir $out_dir/parts

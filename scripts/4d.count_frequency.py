@@ -33,9 +33,22 @@ for variant in input_vcf:
 
     _id = variant.INFO["CSQ"].split(",")[0].split("|")[17]       
 
-    freqs = variant.INFO["AF"]
-    if isinstance(freqs, float):
+    freqs = variant.INFO.get("AF")
+    if freqs and isinstance(freqs, float):
         freqs = (freqs,)
+    if not freqs:
+        AN = variant.INFO.get("AN")
+        AC = variant.INFO.get("AC")
+        if isinstance(AC, int):
+            AC = (AC,)
+        
+        freqs = []
+        for ac in AC:
+            try:
+                freqs.append(ac / AN)
+            except:
+                pass
+
     for freq in freqs:
         format_freq = str(round(freq, decimal))
 
